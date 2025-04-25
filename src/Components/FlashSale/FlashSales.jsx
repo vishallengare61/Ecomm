@@ -13,7 +13,7 @@ const FlashSales = () => {
       image: flashsale1,
       buttonText: "Shop Now",
       overlayColor: "rgba(255, 242, 229, 0.8)",
-      backgroundImage: bg
+      backgroundImage: bg,
     },
     {
       title: "Daily Deals",
@@ -22,7 +22,7 @@ const FlashSales = () => {
       image: flashsale2,
       buttonText: "Shop Now",
       overlayColor: "rgba(229, 249, 244, 0.8)",
-      backgroundImage: bg
+      backgroundImage: bg,
     },
     {
       title: "Weekend Special",
@@ -31,7 +31,7 @@ const FlashSales = () => {
       image: flashsale1,
       buttonText: "Shop Now",
       overlayColor: "rgba(230, 240, 255, 0.8)",
-      backgroundImage: bg
+      backgroundImage: bg,
     },
     {
       title: "Morning Offer",
@@ -40,8 +40,8 @@ const FlashSales = () => {
       image: flashsale2,
       buttonText: "Shop Now",
       overlayColor: "rgba(255, 226, 230, 0.8)",
-      backgroundImage: bg
-    }
+      backgroundImage: bg,
+    },
   ];
 
   return (
@@ -49,7 +49,11 @@ const FlashSales = () => {
       <div className="container-fluid">
         <h2 className=" mb-5 fw-bold">Flash Sales Today</h2>
 
-        <div id="salesCarousel" className="carousel slide" data-bs-ride="carousel">
+        <div
+          id="salesCarousel"
+          className="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div className="carousel-inner">
             {[...Array(Math.ceil(slides.length / 2))].map((_, groupIndex) => (
               <div
@@ -58,34 +62,40 @@ const FlashSales = () => {
                 data-bs-interval="5000"
               >
                 <div className="row g-4">
-                  {slides.slice(groupIndex * 2, groupIndex * 2 + 2).map((slide, index) => (
-                    <div key={index} className="col-md-6">
-                      <div
-                        className="sales-card h-100 p-4 rounded-3 d-flex align-items-center"
-                        style={{
-                          backgroundImage: `linear-gradient(${slide.overlayColor}, ${slide.overlayColor}), url(${slide.backgroundImage})`,
-                          backgroundSize: "cover",
-                          backgroundPosition: "center"
-                        }}
-                      >
-                        <div className="row g-4 align-items-center flex-md-row flex-column">
-                          <div className="col-lg-5 col-12 d-flex justify-content-center">
-                            <img
-                              src={slide.image}
-                              alt={slide.title}
-                              className="img-fluid rounded-3 sales-img"
-                            />
-                          </div>
-                          <div className="col-lg-7 col-12">
-                            <h3 className="fw-bold mb-2">{slide.title}</h3>
-                            <h5 className="text-muted mb-3">{slide.subtitle}</h5>
-                            <p className="mb-4">{slide.description}</p>
-                            <button className="btn btn-danger px-4 py-2">{slide.buttonText}</button>
+                  {slides
+                    .slice(groupIndex * 2, groupIndex * 2 + 2)
+                    .map((slide, index) => (
+                      <div key={index} className="col-md-6">
+                        <div
+                          className="sales-card h-100 p-4 rounded-3 d-flex align-items-center"
+                          style={{
+                            backgroundImage: `linear-gradient(${slide.overlayColor}, ${slide.overlayColor}), url(${slide.backgroundImage})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                          }}
+                        >
+                          <div className="row g-4 align-items-center flex-md-row flex-column">
+                            <div className="col-lg-5 col-12 d-flex justify-content-center">
+                              <img
+                                src={slide.image}
+                                alt={slide.title}
+                                className="img-fluid rounded-3 sales-img"
+                              />
+                            </div>
+                            <div className="col-lg-7 col-12">
+                              <h3 className="fw-bold mb-2">{slide.title}</h3>
+                              <h5 className="text-muted mb-3">
+                                {slide.subtitle}
+                              </h5>
+                              <p className="mb-4">{slide.description}</p>
+                              <button className="btn btn-danger px-4 py-2">
+                                {slide.buttonText}
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
                 </div>
               </div>
             ))}
@@ -191,8 +201,3 @@ const FlashSales = () => {
 };
 
 export default FlashSales;
-
-
-
-
-

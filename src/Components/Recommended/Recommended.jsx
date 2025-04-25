@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Recommended = () => {
   return (
@@ -6,7 +6,7 @@ const Recommended = () => {
       <h1>Recomanded works !</h1>
       <p>here products will go!!</p>
     </div>
-  )
-}
+  );
+};
 
-export default Recommended
+export default Recommended;

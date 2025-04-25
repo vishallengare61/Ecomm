@@ -1,8 +1,8 @@
-import React from 'react';
-import offer1 from '../../assets/Images/Categories/offer-img1.png';
-import offer2 from '../../assets/Images/Categories/offer-img2.png';
-import offerLogo from '../../assets/Images/Categories/offer-logo.png';
-import bg from '../../assets/Images/Categories/offer-shape.png'; // Make sure to add the wave green background image
+import React from "react";
+import offer1 from "../../assets/Images/Categories/offer-img1.png";
+import offer2 from "../../assets/Images/Categories/offer-img2.png";
+import offerLogo from "../../assets/Images/Categories/offer-logo.png";
+import bg from "../../assets/Images/Categories/offer-shape.png"; // Make sure to add the wave green background image
 
 const Offer = () => {
   const offers = [
@@ -29,13 +29,12 @@ const Offer = () => {
               <div
                 className="offer-card rounded-4 p-4 d-flex align-items-center justify-content-between flex-wrap"
                 style={{
-                    backgroundImage: `url(${bg}), linear-gradient(rgba(30, 130, 70, 0.4), rgba(30, 130, 70, 0.4))`,
-                    backgroundBlendMode: 'overlay',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center center',
-                    color: '#fff',
-                  }}
-                  
+                  backgroundImage: `url(${bg}), linear-gradient(rgba(30, 130, 70, 0.4), rgba(30, 130, 70, 0.4))`,
+                  backgroundBlendMode: "overlay",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center center",
+                  color: "#fff",
+                }}
               >
                 <div className="d-flex align-items-center gap-3 flex-wrap flex-md-nowrap">
                   <img
@@ -48,7 +47,14 @@ const Offer = () => {
                     <img
                       src={offerLogo}
                       alt="Logo"
-                      style={{ width: 60, marginBottom: 10, border: '1px solid white', padding: '10px', borderRadius: '50%', background: '#fff' }}
+                      style={{
+                        width: 60,
+                        marginBottom: 10,
+                        border: "1px solid white",
+                        padding: "10px",
+                        borderRadius: "50%",
+                        background: "#fff",
+                      }}
                     />
                     <h4 className="fw-bold mb-2">{offer.text}</h4>
                     <div className="d-flex gap-2 flex-wrap">
@@ -74,7 +80,7 @@ const Offer = () => {
           min-height: 280px;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .offer-card:hover {
           transform: translateY(-5px);
           box-shadow: 0 10px 20px rgba(0,0,0,0.1);

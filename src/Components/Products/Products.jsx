@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import product1 from "../../assets/Images/Categories/product-img1.png";
 import product2 from "../../assets/Images/Categories/product-img2.png";
 import product3 from "../../assets/Images/Categories/product-img3.png";
@@ -10,68 +10,68 @@ const products = [
   {
     id: 1,
     image: product1,
-    name: 'Taylor Farms Broccoli Florets Vegetables',
+    name: "Taylor Farms Broccoli Florets Vegetables",
     oldPrice: 28.99,
     newPrice: 14.99,
     rating: 4.8,
-    reviews: '17k',
-    sold: '18/35',
-    shop: 'Lucky Supermarket',
+    reviews: "17k",
+    sold: "18/35",
+    shop: "Lucky Supermarket",
   },
   {
     id: 2,
     image: product2,
-    name: 'Taylor Farms Broccoli Florets Vegetables',
+    name: "Taylor Farms Broccoli Florets Vegetables",
     oldPrice: 28.99,
     newPrice: 14.99,
     rating: 4.8,
-    reviews: '17k',
-    sold: '18/35',
-    shop: 'Lucky Supermarket',
+    reviews: "17k",
+    sold: "18/35",
+    shop: "Lucky Supermarket",
   },
   {
     id: 3,
     image: product3,
-    name: 'Taylor Farms Broccoli Florets Vegetables',
+    name: "Taylor Farms Broccoli Florets Vegetables",
     oldPrice: 28.99,
     newPrice: 14.99,
     rating: 4.8,
-    reviews: '17k',
-    sold: '18/35',
-    shop: 'Lucky Supermarket',
+    reviews: "17k",
+    sold: "18/35",
+    shop: "Lucky Supermarket",
   },
   {
     id: 4,
     image: product4,
-    name: 'Taylor Farms Broccoli Florets Vegetables',
+    name: "Taylor Farms Broccoli Florets Vegetables",
     oldPrice: 28.99,
     newPrice: 14.99,
     rating: 4.8,
-    reviews: '17k',
-    sold: '18/35',
-    shop: 'Lucky Supermarket',
+    reviews: "17k",
+    sold: "18/35",
+    shop: "Lucky Supermarket",
   },
   {
     id: 5,
     image: product5,
-    name: 'Taylor Farms Broccoli Florets Vegetables',
+    name: "Taylor Farms Broccoli Florets Vegetables",
     oldPrice: 28.99,
     newPrice: 14.99,
     rating: 4.8,
-    reviews: '17k',
-    sold: '18/35',
-    shop: 'Lucky Supermarket',
+    reviews: "17k",
+    sold: "18/35",
+    shop: "Lucky Supermarket",
   },
   {
     id: 6,
     image: product6,
-    name: 'Taylor Farms Broccoli Florets Vegetables',
+    name: "Taylor Farms Broccoli Florets Vegetables",
     oldPrice: 28.99,
     newPrice: 14.99,
     rating: 4.8,
-    reviews: '17k',
-    sold: '18/35',
-    shop: 'Lucky Supermarket',
+    reviews: "17k",
+    sold: "18/35",
+    shop: "Lucky Supermarket",
   },
 ];
 
@@ -219,7 +219,9 @@ const Products = () => {
       <div className="products-container">
         {products.map((item) => (
           <div className="product-card" key={item.id}>
-            <button className="add-btn" title="Add to cart">🛒</button>
+            <button className="add-btn" title="Add to cart">
+              🛒
+            </button>
             <div className="image-wrapper">
               <img src={item.image} alt="product" className="product-image" />
             </div>
