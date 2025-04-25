@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
 
 import Layout from './Components/Layout/Layout';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Cart from './Components/Cart/Cart';
 import Profile from './Components/Profile/Profile';
@@ -22,7 +22,6 @@ function App() {
         <Route path="profile" element={<Profile />} />
       </Route>
     </Routes>
-     
     </>
   )
 }
