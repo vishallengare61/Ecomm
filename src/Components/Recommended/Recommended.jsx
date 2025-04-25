@@ -4,6 +4,7 @@ const Recommended = () => {
   return (
     <div>
       <h1>Recomanded works !</h1>
+      <p>here products will go!!</p>
     </div>
   )
 }

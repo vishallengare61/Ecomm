@@ -36,7 +36,6 @@ const Offer = () => {
                     color: '#fff',
                   }}
                   
-                  
               >
                 <div className="d-flex align-items-center gap-3 flex-wrap flex-md-nowrap">
                   <img
@@ -75,6 +74,7 @@ const Offer = () => {
           min-height: 280px;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+        
         .offer-card:hover {
           transform: translateY(-5px);
           box-shadow: 0 10px 20px rgba(0,0,0,0.1);

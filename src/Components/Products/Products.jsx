@@ -78,7 +78,8 @@ const products = [
 const Products = () => {
   return (
     <div>
-      <style>{`
+      <style>
+        {`
         .products-container {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -212,7 +213,8 @@ const Products = () => {
           color: #555;
           text-align: center;
         }
-      `}</style>
+        `}
+      </style>
 
       <div className="products-container">
         {products.map((item) => (
