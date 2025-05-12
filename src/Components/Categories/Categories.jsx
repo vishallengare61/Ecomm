@@ -111,6 +111,7 @@ const Categories = () => {
                 className="category-card  p-4 "
                 style={{ width: "220px" }}
               >
+                
                 <div
                   className="img-container rounded-circle mb-3 mx-auto"
                   style={{
