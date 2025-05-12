@@ -111,7 +111,7 @@ const Categories = () => {
                 className="category-card  p-4 "
                 style={{ width: "220px" }}
               >
-                
+
                 <div
                   className="img-container rounded-circle mb-3 mx-auto"
                   style={{
@@ -123,6 +123,7 @@ const Categories = () => {
                 >
                   <img
                     src={category.img}
+                    
                     alt={category.title}
                     className="img-fluid h-100 w-100 object-fit-contain"
                   />
